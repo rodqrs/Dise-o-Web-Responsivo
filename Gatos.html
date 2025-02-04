@@ -1,0 +1,108 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="en"> <!-- Inicia el elemento raíz del documento, especificando que el idioma es inglés -->
+  <head> <!-- Inicio de la sección de cabecera que contiene metadatos e información para el navegador -->
+    <meta charset="utf-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <title>CatPhotoApp</title> <!-- Define el título de la página que se muestra en la pestaña del navegador -->
+  </head> <!-- Fin de la sección de cabecera -->
+  <body> <!-- Inicio del cuerpo del documento donde se coloca el contenido visible de la página -->
+    <main> <!-- Elemento principal que contiene el contenido central de la página -->
+      <h1>CatPhotoApp</h1> <!-- Encabezado principal que muestra el nombre de la aplicación -->
+      <section> <!-- Sección para agrupar contenido relacionado a "Cat Photos" -->
+        <h2>Cat Photos</h2> <!-- Subtítulo para la sección de fotos de gatos -->
+        <p>
+          <!-- Párrafo con un enlace a una imagen de gatos corriendo -->
+          Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!
+        </p>
+        <p>
+          <!-- Párrafo con un enlace (que se abre en una nueva pestaña) a más fotos de gatos -->
+          See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.
+        </p>
+        <!-- Enlace que envuelve a una imagen; al hacer clic se redirige a freecatphotoapp.com -->
+        <a href="https://freecatphotoapp.com">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+          <!-- Imagen de un gato naranja relajado, con texto alternativo descriptivo -->
+        </a>
+      </section> <!-- Fin de la sección de fotos de gatos -->
+      
+      <section> <!-- Sección para agrupar contenido relacionado a "Cat Lists" -->
+        <h2>Cat Lists</h2> <!-- Subtítulo para la sección de listas relacionadas a gatos -->
+        <h3>Things cats love:</h3> <!-- Encabezado de nivel 3 que introduce una lista de cosas que aman los gatos -->
+        <ul> <!-- Lista desordenada -->
+          <li>cat nip</li> <!-- Elemento de lista: cat nip -->
+          <li>laser pointers</li> <!-- Elemento de lista: punteros láser -->
+          <li>lasagna</li> <!-- Elemento de lista: lasaña -->
+        </ul>
+        <figure> <!-- Contenedor para contenido gráfico y su descripción -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <!-- Imagen de una porción de lasaña con su atributo alt -->
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+          <!-- Leyenda de la imagen, con énfasis en la palabra "love" -->
+        </figure>
+        <h3>Top 3 things cats hate:</h3> <!-- Encabezado de nivel 3 que introduce una lista de cosas que odian los gatos -->
+        <ol> <!-- Lista ordenada -->
+          <li>flea treatment</li> <!-- Elemento de lista: tratamiento contra pulgas -->
+          <li>thunder</li> <!-- Elemento de lista: truenos -->
+          <li>other cats</li> <!-- Elemento de lista: otros gatos -->
+        </ol>
+        <figure> <!-- Otro contenedor gráfico con descripción -->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <!-- Imagen que muestra cinco gatos con su atributo alt descriptivo -->
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+          <!-- Leyenda que enfatiza la palabra "hate" en negrita -->
+        </figure>
+      </section> <!-- Fin de la sección de listas -->
+      
+      <section> <!-- Sección para agrupar contenido relacionado al formulario de gatos -->
+        <h2>Cat Form</h2> <!-- Subtítulo para la sección del formulario -->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- Inicio del formulario que envía los datos a la URL especificada en el atributo action -->
+          <fieldset> <!-- Agrupa elementos relacionados dentro de un recuadro -->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <!-- Título del grupo de campos para seleccionar si el gato es de interior o exterior -->
+            <label>
+              <!-- Etiqueta para el primer botón de radio -->
+              <input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor
+              <!-- Botón de radio para la opción "Indoor", marcado por defecto -->
+            </label>
+            <label>
+              <!-- Etiqueta para el segundo botón de radio -->
+              <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor
+              <!-- Botón de radio para la opción "Outdoor" -->
+            </label>
+          </fieldset> <!-- Fin del primer fieldset -->
+          
+          <fieldset> <!-- Segundo grupo de campos del formulario -->
+            <legend>What's your cat's personality?</legend>
+            <!-- Título del grupo para seleccionar la personalidad del gato -->
+            <input id="loving" type="checkbox" name="personality" value="loving" checked>
+            <!-- Checkbox para la personalidad "Loving", marcado por defecto -->
+            <label for="loving">Loving</label>
+            <!-- Etiqueta asociada al checkbox "Loving" -->
+            
+            <input id="lazy" type="checkbox" name="personality" value="lazy">
+            <!-- Checkbox para la personalidad "Lazy" -->
+            <label for="lazy">Lazy</label>
+            <!-- Etiqueta asociada al checkbox "Lazy" -->
+            
+            <input id="energetic" type="checkbox" name="personality" value="energetic">
+            <!-- Checkbox para la personalidad "Energetic" -->
+            <label for="energetic">Energetic</label>
+            <!-- Etiqueta asociada al checkbox "Energetic" -->
+          </fieldset> <!-- Fin del segundo fieldset -->
+          
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <!-- Campo de texto para ingresar la URL de la foto del gato; es obligatorio (required) -->
+          <button type="submit">Submit</button>
+          <!-- Botón para enviar el formulario -->
+        </form> <!-- Fin del formulario -->
+      </section> <!-- Fin de la sección del formulario -->
+    </main> <!-- Fin del contenido principal -->
+    
+    <footer> <!-- Sección de pie de página -->
+      <p>
+        <!-- Párrafo que muestra información de derechos y un enlace -->
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer> <!-- Fin del pie de página -->
+  </body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML -->
